@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">JobApp MVVM</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="todo">Job</string>
+    <string name="company_name">Company Name</string>
+    <string name="no">No</string>
+    <string name="none">"No Saved Items "</string>
+    <string name="search">Search</string>
+</resources>
