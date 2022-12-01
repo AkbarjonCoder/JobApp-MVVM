@@ -6,12 +6,12 @@
         <type value="RUNNING_DEVICE_TARGET" />
         <deviceKey>
           <Key>
-            <type value="VIRTUAL_DEVICE_PATH" />
-            <value value="C:\Users\user\.android\avd\Copy_of_Emulator.avd" />
+            <type value="SERIAL_NUMBER" />
+            <value value="d4e7d089" />
           </Key>
         </deviceKey>
       </Target>
     </runningDeviceTargetSelectedWithDropDown>
-    <timeTargetWasSelectedWithDropDown value="2022-11-30T14:44:06.899697100Z" />
+    <timeTargetWasSelectedWithDropDown value="2022-12-01T15:02:07.000132400Z" />
   </component>
 </project>

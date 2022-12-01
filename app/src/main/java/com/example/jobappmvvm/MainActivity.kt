@@ -3,6 +3,7 @@ package com.example.jobappmvvm
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
+import com.example.jobappmvvm.database.JobDatabase
 import com.example.jobappmvvm.databinding.ActivityMainBinding
 import com.example.jobappmvvm.network.RetroInstance
 import com.example.jobappmvvm.repository.JobRepository
@@ -17,7 +18,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         supportActionBar?.hide()
 
-        val repository = JobRepository(RetroInstance.retroInstance())
+        val dao = JobDatabase.invoke(this).jobDao()
+        val repository = JobRepository(RetroInstance.retroInstance(), dao)
         val viewModelFactory = MainViewModelFactory(application, repository)
         mainViewModel = ViewModelProvider(this, viewModelFactory)[MainViewModel::class.java]
 

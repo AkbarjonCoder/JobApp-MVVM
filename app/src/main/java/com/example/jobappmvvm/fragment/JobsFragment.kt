@@ -31,7 +31,8 @@ class JobsFragment : Fragment(R.layout.fragment_jobs) {
         binding.rvRemoteJobs.adapter = jobAdapter
         binding.rvRemoteJobs.layoutManager = LinearLayoutManager(requireContext())
         binding.swipeContainer.setOnRefreshListener {
-            binding.swipeContainer.isRefreshing = false
+            jobAdapter.submitList(emptyList())
+            viewModel.getAllRemoteJobs()
         }
         setupViewModel(viewModel)
         jobAdapter.onClick = {

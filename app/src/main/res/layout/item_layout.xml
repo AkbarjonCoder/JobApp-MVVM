@@ -79,10 +79,11 @@
         android:layout_weight="1.5"
         android:orientation="vertical">
 
-        <ImageView
+        <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/ivCompanyLogo"
             android:layout_width="160dp"
             android:layout_height="90dp"
+            style="@style/circle"
             android:layout_gravity="center"
             android:contentDescription="@string/todo"
             app:layout_constraintStart_toStartOf="parent"

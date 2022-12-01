@@ -7,29 +7,17 @@
     android:padding="16dp"
     tools:context=".fragment.SavedFragment">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card_no_available"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:backgroundTint="@color/green"
-        android:elevation="8dp"
-        app:cardCornerRadius="15dp"
-        android:visibility="visible"
+    <ImageView
+        android:id="@+id/notFound"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_baseline_sentiment_very_dissatisfied_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="50dp"
-            android:text="@string/none"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
-
-    </androidx.cardview.widget.CardView>
+        app:layout_constraintStart_toStartOf="@+id/recyclerView"
+        app:layout_constraintTop_toTopOf="@+id/recyclerView"
+        app:tint="#43A047" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
